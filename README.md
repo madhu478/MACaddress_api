@@ -10,8 +10,10 @@ Write the Dockerfile to build the image
 
 Build the Image from dockerfile using docker build -t test .
 
-Run the Image using docker run and pass the arrguments along with docker run  
- docker run test:latest python /api.py 44:38:39:ff:ef:57  
+Run the Image using docker run and pass the arrguments along with docker run
+ docker run test:latest python /api.py 44:38:39:ff:ef:57 
+ 
+ 
 
 output looks like :
   MAC address is:44:38:39:ff:ef:57                                                                                           
