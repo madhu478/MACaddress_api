@@ -2,10 +2,9 @@ Querying Data through API
 
 First generate your API key through Macaddress site.
 
-Execute the program using python,
+Execute the program using python
 
-
-python3 api.py 44:38:39:ff:ef:57
+        python3 api.py 44:38:39:ff:ef:57
 
 Write the Dockerfile to build the image 
 
