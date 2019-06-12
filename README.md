@@ -8,9 +8,10 @@ Execute the program using python
 
 python3 api.py 44:38:39:ff:ef:57
 
-Build the Image using docker build -t test .
+Build the Image from dockerfile using docker build -t test .
 
-Run the Image using docker run test:latest
+Run the Image using docker run and pass the arrguments along with docker run  
+ docker run test:latest python /api.py 44:38:39:ff:ef:57  
 
 output looks like :
   MAC address is:44:38:39:ff:ef:57                                                                                           
