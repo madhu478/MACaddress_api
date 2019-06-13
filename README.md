@@ -10,7 +10,7 @@ Execute the program using python comand and give the APIKEY and MACADDRESS from 
         python3 api.py at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57
 
 Step2:
-     create requirements.txt to give all the patches required to work the program
+     create requirements.txt  and give all the patches required to work the program and copy it to the docker image 
      
 step3:
     use multi-stage builds to build the containers.
