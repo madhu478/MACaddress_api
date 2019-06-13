@@ -9,9 +9,9 @@ Execute the program using python comand and give the APIKEY and MACADDRESS from 
 For executing the python program first we have to pass APIKEY followed by MACADDRESS
       
       
-        python3 program.py APIKEY MACADDRESSS  
+        $python3 program.py <APIKEY>  <MACADDRESSS>  
 
-        python3 api.py at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57
+        $python3 api.py at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57
 
 Step2:
      create requirements.txt  and give all the patches required to work the program and copy it to the docker image 
@@ -26,8 +26,8 @@ step3:
 Run the Image using docker run and pass the arrguments along with docker run
 
 
-        docker run $imagename $APIKEY $MACADDRESS
-        docker run test:latest at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57 
+        $docker run $imagename $APIKEY $MACADDRESS
+        $docker run test:latest at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57 
  
  
 output looks like :
