@@ -1,10 +1,20 @@
+#Base Image as Python3
 FROM python:3 as base
-WORKDIR / 
-ADD requirements.txt / 
+#Maintainer 
+MAINTAINER madhukomaln@hcl.com
+# Establish the runtime user (with no password and no sudo) 
+RUN useradd -m myapp
+USER myapp
+#Configuring working directory
+WORKDIR /home/myapp 
+#Movie the .txt file to the working directory
+ADD requirements.txt /home/myapp 
 RUN pip  install  -r  requirements.txt 
 
 
 FROM base
-ADD api.py /
-ENTRYPOINT ["python3", "api.py"]
+#Copying the python program to working directory
+ADD api.py /home/myapp
+#using ENTRYPOINT to execute the program 
+ENTRYPOINT ["python3", "/home/myapp/api.py"]
 
