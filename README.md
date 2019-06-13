@@ -6,6 +6,9 @@ Step1:
 The coding language used is python
 
 Execute the program using python comand and give the APIKEY and MACADDRESS from command line 
+      
+      
+        python3 program.py APIKEY MACADDRESSS  
 
         python3 api.py at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57
 
