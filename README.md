@@ -2,15 +2,21 @@ Querying Data through API
 
 First generate your API key through Macaddress site.
 
+Step1:
 The coding language used is python
 
-Execute the program using python comand
+Execute the program using python comand and give the APIKEY and MACADDRESS from command line 
 
-        python3 api.py 44:38:39:ff:ef:57
+        python3 api.py at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57
 
-Write the Dockerfile to build the image 
+Step2:
+     create requirements.txt to give all the patches required to work the program
+     
+step3:
+    use multi-stage builds to build the container
+    
 
-Build the Image from dockerfile using
+ 
 
          docker build -t test .
 
