@@ -11,11 +11,6 @@ params['search']=MacAddress
 resp = requests.get(url=url, params=params) 
 info = resp.json() 
 try:
-<<<<<<< HEAD
     print("Company Name is:" +info['vendorDetails']['companyName'])
-    
-=======
-   print("Company Name is:" +info['vendorDetails']['companyName'])
->>>>>>> 9d6baa1555372f292989b96693055f80802d6bad
 except: 
     print ("Company Name not found not found ")
