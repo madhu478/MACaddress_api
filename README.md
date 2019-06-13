@@ -13,20 +13,19 @@ Step2:
      create requirements.txt to give all the patches required to work the program
      
 step3:
-    use multi-stage builds to build the container
+    use multi-stage builds to build the containers.
+    1.First one is the base image and all packages that need to execute the program
+    2.Second is to copy the program to working directory and used ENTRYPOINT to execute the image
     
-
- 
-
-         docker build -t test .
+           docker build -t test .
 
 Run the Image using docker run and pass the arrguments along with docker run
         
-        docker run test:latest python /api.py 44:38:39:ff:ef:57 
+        docker run test:latest at_7ubl6OxM0uII0hA3LqeScDxTvTlPh 44:38:39:ff:ef:57 
  
  
 output looks like :
                                                                                            
-Company Name is:Cumulus Networks, Inc                                                                                     
+               Company Name is:Cumulus Networks, Inc                                                                                     
 
 
