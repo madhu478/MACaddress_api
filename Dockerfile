@@ -9,7 +9,7 @@ USER myapp
 WORKDIR /home/myapp 
 #Movie the .txt file to the working directory
 ADD requirements.txt /home/myapp 
-RUN pip  install  -r  requirements.txt 
+RUN pip  install --user -r  requirements.txt 
 
 
 FROM base
