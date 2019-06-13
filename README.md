@@ -20,8 +20,7 @@ Run the Image using docker run and pass the arrguments along with docker run
  
  
 output looks like :
-  MAC address is:44:38:39:ff:ef:57                                                                                           
-Company Name is:Cumulus Networks, Inc                                                                                      
-Company Address is:650 Castro Street, suite 120-245 Mountain View  CA  94041 US
+                                                                                           
+Company Name is:Cumulus Networks, Inc                                                                                     
 
 
