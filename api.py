@@ -11,8 +11,6 @@ params['search']=MacAddress
 resp = requests.get(url=url, params=params) 
 info = resp.json() 
 try:
-    print("MAC address is:" +info['macAddressDetails']['searchTerm'])
-    print("Company Name is:" +info['vendorDetails']['companyName'])
-    print("Company Address is:" +info['vendorDetails']['companyAddress'])
+   print("Company Name is:" +info['vendorDetails']['companyName'])
 except: 
     print ("Company Name not found not found ")
