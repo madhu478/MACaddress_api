@@ -1,21 +1,12 @@
-import requests 
-import json 
 import sys 
-try: 
-    MacAddress=sys.argv[1] 
-except NameError: 
-    print("Address not found") 
-url = 'https://api.macaddress.io/v1' 
-params = dict( apikey='at_7ubl6OxM0uII0hA3LqeScDxTvTlPh', output='json' ) 
-params['search']=MacAddress 
-resp = requests.get(url=url, params=params) 
-info = resp.json() 
-try:
-<<<<<<< HEAD
-    print("Company Name is:" +info['vendorDetails']['companyName'])
-    
-=======
-   print("Company Name is:" +info['vendorDetails']['companyName'])
->>>>>>> 9d6baa1555372f292989b96693055f80802d6bad
-except: 
-    print ("Company Name not found not found ")
+import urllib.request 
+import json 
+import codecs 
+arg1=sys.argv[1] 
+arg2=sys.argv[2] 
+url = 'https://api.macaddress.io/v1?apiKey='+arg1+'&output=json&search='+arg2 
+json_obj = urllib.request.urlopen(url) 
+reader = codecs.getreader("utf-8") 
+data = json.load(reader(json_obj)) 
+print ("company Name is " +data['vendorDetails']['companyName']); 
+print ("comapany Address is " +data['vendorDetails']['companyAddress']);
