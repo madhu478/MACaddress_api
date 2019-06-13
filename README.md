@@ -32,8 +32,8 @@ Run the Image using docker run and pass the arrguments along with docker run
  Step4:
       Now Implemented Bash scrpt to containerized application
        
-       $ ./mac
-       $ ./macaddress.sh at_Jkpyix2qvXMRA29casQxJ1nqioU8b 44:38:39:ff:ef:57
+       $ ./dockerwrapper.sh $APIKEY  $MACADDRESS
+       $ ./dockerwrapper.sh at_Jkpyix2qvXMRA29casQxJ1nqioU8b 44:38:39:ff:ef:57
      
  
 output looks like :
