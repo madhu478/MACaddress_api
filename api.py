@@ -8,6 +8,6 @@ url = 'https://api.macaddress.io/v1?apiKey='+APIKEY+'&output=json&search='+MACAD
 json_obj = urllib.request.urlopen(url) 
 reader = codecs.getreader("utf-8") 
 data = json.load(reader(json_obj)) 
-print ("company Name is " +data['vendorDetails']['companyName']); 
-
+print("Mac address " +data['macAddressDetails']['searchTerm'] ,end = '  ')
+print("is associated with company "  +data['vendorDetails']['companyName'])
 
