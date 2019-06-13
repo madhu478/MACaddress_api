@@ -29,6 +29,6 @@ Run the Image using docker run and pass the arrguments along with docker run
  
 output looks like :
                                                                                            
-               Company Name is:Cumulus Networks, Inc                                                                                     
+               Mac address 44:38:39:ff:ef:57  is associated with company Cumulus Networks, Inc                                                                                 
 
 
