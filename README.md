@@ -1,9 +1,9 @@
-Querying Data through API
+Application For Fetching comapny from MACaddress using API.
 
 First generate your API key through Macaddress site.
 
-Step1:
-The coding language used is python
+Case1
+The secoding language used is python
 
 Execute the program using python comand and give the APIKEY and MACADDRESS from command line 
 For executing the python program first we have to pass APIKEY followed by MACADDRESS
